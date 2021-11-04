@@ -1,0 +1,69 @@
+
+.list-item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.list-item:hover .link {
+    background-color: blue;
+}
+
+.link {
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    padding: 30px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.list-item:hover>.sub-list {
+    display: block;
+}
+
+.sub-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    display: none;
+}
+
+.sub-list.inner {
+    top: 0;
+    left: 100%;
+}
+
+.sub-item {
+    position: relative;
+}
+
+.sub-item:hover>.sub-list.inner {
+    display: block;
+}
+
+.sub-list:hover .sub-link.inner {
+    background-color: green;
+}
+
+.sub-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: blue;
+    color: white;
+    padding: 30px 50px;
+    display: block;
+}
+
+.sub-item a:hover {
+    background-color: green;
+}
+
+a {
+    all: inherit;
+}
+
+.list {
+    cursor: pointer;
+}
